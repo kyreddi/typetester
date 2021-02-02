@@ -1,18 +1,72 @@
 <!DOCTYPE html>
-
-<html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+<!-- MAIN HEADER -->
+<header class="main-header">
+    <h1>UI Brains Typing Tester App</h1>
+</header>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+<section class="intro-section">
+    <div>
+        <p>This is a typing test.
+            Your goal is to duplicate the provided text,
+            EXACTLY, in the field below.
+            The timer starts when you start typing,
+            and only stops when you match this
+            text exactly. Good Luck!</p>
+    </div>
+</section>
+<br>
+<section class="text-section">
+    <div class="text-section-div">
+        <p>Thanks for Learning UI Technologies.</p>
+    </div>
+</section>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+<br>
+<section class="text-area-section">
+    <div class="text-area-div">
+        <textarea onpaste="return false" id="text-area" rows="4" cols="53" placeholder="The Clock starts when you starts typing.."></textarea>
+    </div>
+</section>
 
+<br>
+<section class="result-section">
+    <div class="result-section-div">
+        <span class="timer">
+            <span id="minutes">00</span> Mins
+            <span id="seconds">00</span> Secs
+        </span>
+        <span>
+                <button type="button" id="reset">Reset</button>
+            </span>
+    </div>
+</section>
+
+<!-- Congratulations Section -->
+<section class="cong-section">
+    <div class="cong-section-div">
+        <p>Congratulations !!</p>
+    </div>
+</section>
+
+<footer>
+    <h3>Copyright &copy; 1998 reddy.com</h3>
+    <p>All Rights Reserved from <b>Redy Garu</b></p>
+    <p>Created And Maintened by <a href="#" target="_blank"><i class="fa fa-user"> Reddy</i></a></p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
